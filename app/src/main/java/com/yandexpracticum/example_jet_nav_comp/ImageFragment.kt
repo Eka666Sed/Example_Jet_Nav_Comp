@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import com.yandexpracticum.example_jet_nav_comp.databinding.FragmentImageBinding
@@ -37,5 +38,9 @@ class ImageFragment : Fragment() {
         binding.back.setOnClickListener{
             findNavController().navigateUp()
         }
+
+        binding.image.animation = AnimationUtils.loadAnimation(context, R.anim.fade_in)
+        binding.image.animate()
+
     }
 }
