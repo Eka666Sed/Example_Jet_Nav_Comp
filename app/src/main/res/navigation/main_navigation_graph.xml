@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.yandexpracticum.example_jet_nav_comp.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_factFragment"
+            app:destination="@id/factFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/factFragment"
+        android:name="com.yandexpracticum.example_jet_nav_comp.FactFragment"
+        android:label="fragment_fact"
+        tools:layout="@layout/fragment_fact" >
+        <action
+            android:id="@+id/action_factFragment_to_imageFragment"
+            app:destination="@id/imageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imageFragment"
+        android:name="com.yandexpracticum.example_jet_nav_comp.ImageFragment"
+        android:label="fragment_image"
+        tools:layout="@layout/fragment_image" />
+</navigation>
