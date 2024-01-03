@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Example_Jet_Nav_Comp</string>
+    <string name="cat">Путь кота</string>
+    <string name="hamster">Путь хомяка</string>
+
+    <string name="see_image">Посмотреть картинку</string>
+    <string name="go_to_start">Вернуться в начало</string>
+
+    <string name="cat_fact">Чем больше вы разговариваете с кошкой, тем больше она разговаривает с вами</string>
+    <string name="hamster_fact">Хомяки запоминают свою кличку, помнят родственников и могут научиться нескольким трюкам</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
